@@ -1,0 +1,52 @@
+nosql@virtualbox:~$ cd Aulas
+nosql@virtualbox:~/Aulas$ ls
+dados  mongodb  mongodb-linux-x86_64-ubuntu1604-3.2.10.tgz  nosql-class
+nosql@virtualbox:~/Aulas$ cd nosql-class
+nosql@virtualbox:~/Aulas/nosql-class$ ls
+run.sh
+nosql@virtualbox:~/Aulas/nosql-class$ git pull
+remote: Counting objects: 18, done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 18 (delta 1), reused 0 (delta 0), pack-reused 9
+Unpacking objects: 100% (18/18), done.
+From https://www.github.com/gcouti/nosql-class
+   f7f6ed4..066dfeb  master     -> origin/master
+Updating f7f6ed4..066dfeb
+Fast-forward
+ "aula1/Aula 1 - Introdu\303\247\303\243o.pdf"               |    Bin 0 -> 1648563 bytes
+ "aula2/Aula 2 - Opera\303\247\303\265es b\303\241sicas.pdf" |    Bin 0 -> 426001 bytes
+ aula2/Vocabulary.json                                       | 291214 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ aula2/ex2.py                                                |     10 +
+ mongo-server.sh                                             |      2 +
+ run.sh                                                      |      6 +
+ 6 files changed, 291232 insertions(+)
+ create mode 100644 "aula1/Aula 1 - Introdu\303\247\303\243o.pdf"
+ create mode 100755 "aula2/Aula 2 - Opera\303\247\303\265es b\303\241sicas.pdf"
+ create mode 100644 aula2/Vocabulary.json
+ create mode 100644 aula2/ex2.py
+ create mode 100755 mongo-server.sh
+nosql@virtualbox:~/Aulas/nosql-class$ cd aula2
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ls
+Aula 2 - Operações básicas.pdf  ex2.py  Vocabulary.json
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ./bin/mongoimport -d nosqlclass -c Vocabulary nosql-class/aula2/Vocabulary.json
+bash: ./bin/mongoimport: Arquivo ou diretório não encontrado
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ./bin/mongoimport -d nosqlclass -c Vocabulary /Vocabulary.json
+bash: ./bin/mongoimport: Arquivo ou diretório não encontrado
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ Vocabulary.json
+Vocabulary.json: comando não encontrado
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ./bin/mongoimport -d nosqlclass -c Vocabulary Vocabulary.json
+bash: ./bin/mongoimport: Arquivo ou diretório não encontrado
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ./~/Aulas/mongodb/bin/mongoimport -d nosqlclass -c Vocabulary Vocabulary.json
+bash: ./~/Aulas/mongodb/bin/mongoimport: Arquivo ou diretório não encontrado
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ~/Aulas/mongodb/bin/mongoimport -d nosqlclass -c Vocabulary Vocabulary.json
+2016-11-10T21:42:14.154-0200	connected to: localhost
+2016-11-10T21:42:17.138-0200	[#######################.] nosqlclass.Vocabulary	22.1MB/22.1MB (99.6%)
+2016-11-10T21:42:17.157-0200	[########################] nosqlclass.Vocabulary	22.1MB/22.1MB (100.0%)
+2016-11-10T21:42:17.157-0200	imported 291214 documents
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ~Aulas/nosql-class/aula2/ex2.py
+bash: ~Aulas/nosql-class/aula2/ex2.py: Arquivo ou diretório não encontrado
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ex2.py
+ex2.py: comando não encontrado
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ~ ex2.py
+bash: /home/nosql: É um diretório
+nosql@virtualbox:~/Aulas/nosql-class/aula2$ ~Aulas/nosql-class/aula2/ex2.py
