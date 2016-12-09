@@ -1,4 +1,4 @@
-# Exerc-cio-Aula-2
+# Exerc-cio 1 -Aula-2
 
 
 db.Alunos.insert({ "name":"Leonardo", "birthday":ISODate("1987-22-04T00:00:00Z"), "group": "Grupo 1" })
