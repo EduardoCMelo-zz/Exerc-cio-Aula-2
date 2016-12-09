@@ -1,32 +1,6 @@
 # Exerc-cio-Aula-2
 
-nosql@virtualbox:~/Aulas/mongodb$ ./bin/mongo
-MongoDB shell version: 3.2.10
-connecting to: test
-Server has startup warnings:
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten]
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten] ** We suggest setting it to 'never'
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten]
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten] ** We suggest setting it to 'never'
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten]
 
-^C
-bye
-nosql@virtualbox:~/Aulas/mongodb$ cd /Aulas/mongodb
-nosql@virtualbox:/Aulas/mongodb$ ./bin/mongo
-MongoDB shell version: 3.2.10
-connecting to: test
-Server has startup warnings:
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten]
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
-2016-11-10T19:43:08.857-0200 I CONTROL [initandlisten] ** We suggest setting it to 'never'
-DBCollection.prototype._validateForStorage@src/mongo/shell/collection.js:252:1
-DBCollection.prototype._validateForStorage@src/mongo/shell/collection.js:256:13
-Bulk/this.insert@src/mongo/shell/bulk_api.js:652:17
-DBCollection.prototype.insert@src/mongo/shell/collection.js:344:13
-@(shell):1:1
 db.Alunos.insert({ "name":"Leonardo", "birthday":ISODate("1987-22-04T00:00:00Z"), "group": "Grupo 1" })
 WriteResult({ "nInserted" : 1 })
 db.Alunos.insert({ "name":"Briner", "birthday":ISODate("1988-07-11T00:00:00Z"), "group": "Grupo 1" })
